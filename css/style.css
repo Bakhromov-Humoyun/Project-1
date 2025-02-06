@@ -31,7 +31,6 @@ body {
   --bg-grey: #dfdfdfcc;
 }
 header {
-  position: fixed;
   width: 100%;
   background-image: linear-gradient(
     to right,
@@ -67,7 +66,7 @@ li {
 a:hover {
   color: var(--bg-yellow);
 }
-section {
+.add {
   width: 100%;
   background-image: linear-gradient(
     to right,
@@ -626,4 +625,162 @@ footer {
   .porttitor {
     padding: 0;
   }
+}
+
+.nav-menu {
+  display: flex;
+  gap: 60px;
+}
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.dark .mode-btn__img {
+  width: 48px;
+}
+.dark header {
+  background: linear-gradient(
+    to right,
+    var(--lineBlue) 50%,
+    var(--lineDark) 50%
+  );
+}
+.dark .navbar-shrink {
+  background: var(--shirnkWhite);
+}
+.dark .nav-menu__link {
+  color: var(--textWhite);
+}
+
+.dark .nav-btn,
+.nav-menu,
+nav {
+  display: flex;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background: linear-gradient(
+    to right,
+    var(--lineDark) 50%,
+    var(--lineBlue) 50%
+  );
+  padding: 20px 0;
+}
+nav {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu {
+  gap: 60px;
+}
+.nav-btn {
+  align-items: center;
+  gap: 24px;
+}
+:root {
+  --lineDark: rgba(0, 0, 0, 0.88);
+  --lineBlue: rgba(87, 184, 255, 1);
+  --shirnkColor: rgba(165, 42, 42, 0.572);
+  --shirnkWhite: rgba(1, 42, 42, 0.572);
+  --textWhite: rgba(255, 255, 255, 1);
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  top: 0;
+  background: linear-gradient(
+    to right,
+    var(--lineDark) 50%,
+    var(--lineBlue) 50%
+  );
+  padding: 20px 0;
+  transition: 1s;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu {
+  display: flex;
+  gap: 60px;
+}
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.dark .navbar-shrink {
+  background: var(--shirnkWhite);
+}
+.dark .nav-menu__link {
+  color: var(--textWhite);
+}
+.dark .add {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 2, 91) 50%,
+    rgb(9, 21, 16) 50%
+  );
+}
+.dark .sponsor-div {
+  background: #16d06a;
+}
+.dark .the_new-ega {
+  background: rgb(65, 61, 61);
+}
+.dark .news_articls {
+  background: rgb(65, 61, 61);
+}
+.dark footer {
+  background-color: #ff00002a;
+  background-blend-mode: darken;
+}
+.nav-btn,
+.nav-menu,
+nav {
+  display: flex;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background: linear-gradient(
+    to right,
+    var(--lineDark) 50%,
+    var(--lineBlue) 50%
+  );
+  padding: 20px 0;
+}
+nav {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu {
+  gap: 60px;
+}
+.nav-btn {
+  align-items: center;
+  gap: 24px;
+}
+.mode-btn__img {
+  color: white;
+  width: 50px;
 }
