@@ -22,3 +22,21 @@ modeBtn.addEventListener("click", function () {
   }
   document.body.classList.toggle("dark");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+});
+// loading
+
+const loading = document.getElementById("loading");
+
+const loadingDuration = 2000; // 1.8s
+
+setTimeout(() => {
+  loading.classList.add("loading-none");
+}, loadingDuration);

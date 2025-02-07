@@ -5,45 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prtoject</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/loading.css">
   </head>
   <body>
     <header>
       <div class="container">
-        <nav>
-          <div class="brand-logo">
-            <img src="./images/brand-logo.svg" alt="logo?" />
-          </div>
-          <div class="toggle">
+          <div id="loading">
+      <div class="loader">
+        <span></span>
+        Loading
+      </div>
+    </div>
+     <nav>
+          <div class="nav-logo">
+            <img src="./images/logo.svg" alt="no img!" />
+            <div class="toggle">
               <img id="menu-toggle" src="./images/toggle.svg" alt="no img!" />
             </div>
-          <ul class="nav-menu">
-            <li class="nav-menu__item">
+          </div>
+
+          <ul class="nav-menu" id="nav-menu">
+            <li>
               <a class="nav-menu__link" href="#">Home</a>
             </li>
-            <li class="nav-menu__item">
+            <li>
               <a class="nav-menu__link" href="#">About</a>
             </li>
-            <li class="nav-menu__item">
+            <li>
               <a class="nav-menu__link" href="#">Team</a>
             </li>
-            <li class="nav-menu__item">
+            <li>
               <a class="nav-menu__link" href="#">Shop</a>
             </li>
-            <li class="nav-menu__item">
+            <li>
               <a class="nav-menu__link" href="#">Pages</a>
             </li>
           </ul>
-          <div class="nav-btn">
-            <div id="mode-btn" class="btn_dark">
-              <img
-                class="mode-btn__img"
-                src="./images/dark_mode.svg"
-                alt="mode?"
-              />
-            </div>
-
-            <a class="nav-btn__link" href="#">Contuct Us</a>
-          </div>
+          <div class="nav-btn"> 
+            <div id="mode-btn" class="btn_dark"> 
+              <img 
+                class="mode-btn__img" 
+                src="./images/dark_mode.svg" 
+                alt="mode?" 
+              /> 
+            </div> 
+ 
+            <a class="nav-btn__link" href="#">Contuct Us</a> 
+          </div> 
+        </nav>
         </nav>
       </div>
     </header>
